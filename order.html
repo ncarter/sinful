@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>orderform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Andrya Carter">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        form {font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body>
+<h3>Order Form</h3>
+<form action="process_form/process_form.php" method="post" >
+    <label>* First Name: <input type="text" name="fname" id="fname" required></label><br><br>
+    <label>Last Name: <input type="text" name="lname" id="lname"></label><br><br>
+    <label> Telephone Number: <input type="tel" name="tnum" id="tnum"></label><br><br>
+    <label>* E-mail: <input type="text" name="email" id="email" required></label><br><br>
+    <label>* Street: <input type="text" name="street" id="street" size="54" required></label>
+    <br><br>
+    <label>* City: <input type="text" name="city" id="city" required></label>
+    <label>* State: <input type="text" name="state" id="state" maxlength="2" size="5" required>
+    </label>
+    <label>Zip: <input type="text" name="zip" id="zip" maxlength="5" size="5">
+        <br><br></label>
+
+    <h4>Products Requested </h4>
+    <input type="checkbox" id="1dzc" name="1dzc" value="1dzc">
+    <label for="1dzc"> 1 dz Chocolate Cupcakes </label><br>
+    <input type="checkbox" id="1dzv" name="1dzv" value="1dzv">
+    <label for="1dzv"> 1 dz Vanilla Cupcakes </label><br>
+    <input type="checkbox" id="1dzd" name="1dzd" value="1dzd">
+    <label for="1dzd"> 1 dz Deluxe Mix Cupcakes </label><br>
+    <input type="checkbox" id="1dzd" name="1dzd" value="1dzd">
+    <label for="1dzd"> 1 dz Assorted Cupcakes (3 flavors, list in comments) </label><br>
+    <p> </p>
+    <h4> How would you like it?:</h4>
+
+      <input type="radio" id="delivery" name="Del" value="Delivery">
+      <label for="delivery">Delivery</label><br>
+      <input type="radio" id="pickup" name="PU" value="Pickup">
+      <label for="pickup">Pick Up</label><br>
+    <p></p>
+    <h4>Payment Type:</h4>
+      <input type="radio" id="card" name="CC" value="Card">
+      <label for="card">Credit Card</label><br>
+      <input type="radio" id="cash" name="C" value="Cash">
+      <label for="cash">Cash</label><br>
+    <p> </p>
+    <h4>Comments:</h4><br>
+    <textarea name="comments" id="comments" rows="5" cols="60" ></textarea>
+    <br><br>
+    <br>
+    <input type="submit" value="Contact"> <input type="reset">
+
+</form>
+
+<footer> Items marked with a "*" are required </footer>
+</body>
+</html>

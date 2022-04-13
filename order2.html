@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<table>
+    <tr>
+        <td><label for="name">First and Last Name:</label></td>
+        <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+        <td><label for="street">Street:</label></td>
+        <td><input type="text" name="street"></td>
+    </tr>
+    <tr>
+        <td><label for ="city">City:</label></td>
+        <td><input type="text" name="city"></td>
+    </tr>
+    <tr>
+        <td><label for="state">State:</label></td>
+        <td><input type="text" name="state"></td>
+    </tr>
+    <tr>
+        <td><label for ="zipcode">Zip Code:</label></td>
+        <td><input type="text" name="zipcode"></td>
+    </tr>
+    <tr>
+        <td><label for ="nameoncard">Name on Card:</label></td>
+        <td><input type="text" name="nameoncard"></td>
+    </tr>
+    <tr>
+        <td><label for ="cc">Credit Card Number:</label></td>
+        <td><input type="text" name="cc"></td>
+    </tr>
+    <tr>
+        <td><label for ="ed">Experation Date:</label></td>
+        <td><input type="text" name="ed"></td>
+    </tr>
+    <tr>
+        <td><label for ="ccv">CCV:</label></td>
+        <td><input type="text" name="ccv"></td>
+    </tr>
+
+
+    <h4>Products Requested </h4>
+    <input type="checkbox" id="1dzc" name="1dzc" value="1dzc">
+    <label for="1dzc"> 1 dz Chocolate Cupcakes </label><br>
+    <input type="checkbox" id="1dzv" name="1dzv" value="1dzv">
+    <label for="1dzv"> 1 dz Vanilla Cupcakes </label><br>
+    <input type="checkbox" id="1dzd" name="1dzd" value="1dzd">
+    <label for="1dzd"> 1 dz Deluxe Mix Cupcakes </label><br>
+    <input type="checkbox" id="1dzd" name="1dzd" value="1dzd">
+    <label for="1dzd"> 1 dz Assorted Cupcakes (3 flavors, list in comments) </label><br>
+    <p> </p>
+    <h4> How would you like it?:</h4>
+
+      <input type="radio" id="delivery" name="Del" value="Delivery">
+      <label for="delivery">Delivery</label><br>
+      <input type="radio" id="pickup" name="PU" value="Pickup">
+      <label for="pickup">Pick Up</label><br>
+    <p></p>
+    <h4>Payment Type:</h4>
+      <input type="radio" id="card" name="CC" value="Card">
+      <label for="card">Credit Card</label><br>
+      <input type="radio" id="cash" name="C" value="Cash">
+      <label for="cash">Cash</label><br>
+    <p> </p>
+    <h4>Comments:</h4><br>
+    <textarea name="comments" id="comments" rows="5" cols="60" ></textarea>
+    <br><br>
+    <br>
+    <input type="submit" value="Submit"> <input type="reset">
+</body>
+</html>

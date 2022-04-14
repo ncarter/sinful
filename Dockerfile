@@ -1,4 +1,6 @@
-FROM nginx:latest
-COPY ./*.html /usr/share/nginx/html/
-COPY ./css /usr/share/nginx/html/css
-COPY ./img /usr/share/nginx/html/img
+FROM openjdk:16-jdk-alpine
+RUN addgroup -g 1000 -S ncarter && adduser -S ncarter -u 1000 -G ncarter
+USER ncarter
+ARG JAR_FILE=build/libs/*SNAPSHOT.jar
+COPY ${JAR_FILE} sinful.jar
+ENTRYPOINT ["java","-jar","/sinful.jar"]

@@ -15,7 +15,6 @@ body {
     text-align: center;
 }
 
-
 /* 21-36 belongs to cupcake.html */
 
 .row {
@@ -40,16 +39,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
-    border-color: black}
+    border-color: black
+}
 
 h1 {
     margin: 0;
     padding: 10px;
-    font-family:"Papyrus", fantasy;
+    font-family: "Papyrus", fantasy;
     text-align: center;
     font-size: 500%;
     font-weight: bolder;;
-
 }
 
 main {
@@ -71,10 +70,8 @@ main {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: #333;*/
     background-color: turquoise;
     font-family: "Papyrus", fantasy;
-
 }
 
 ol > li {
@@ -90,11 +87,10 @@ ol > li a {
 }
 
 ol > li a:hover {
-    background-color: #111;
+    font-weight: bolder;
 }
 
 .active {
-    /*background-color: #04AA6D;*/
     border-bottom: 1px solid navy;
 }
 
@@ -115,17 +111,17 @@ footer {
 h3 {
     margin: 0;
     padding: 10px;
-    font-family:"Papyrus", fantasy;
+    font-family: "Papyrus", fantasy;
     text-align: center;
     font-size: 150%;
-    font-weight: bolder;;
+    font-weight: bolder;
 }
 
 h2 {
     margin: 0;
     padding: 10px;
-    font-family:"Papyrus", fantasy;
+    font-family: "Papyrus", fantasy;
     text-align: center;
     font-size: 100%;
-    font-weight: bold;;
+    font-weight: bold;
 }
